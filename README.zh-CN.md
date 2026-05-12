@@ -4,6 +4,12 @@
 
 ## 安装
 
+要求：
+
+- Git
+- Python 3.9+，用于运行内置清理辅助脚本
+- Codex 或其他支持 Skills 的 Agent 运行环境
+
 PowerShell:
 
 ```powershell
@@ -21,6 +27,16 @@ git clone https://github.com/scoff426-alt/clear-skill.git ~/.codex/skills/cleari
 ```text
 请帮我安装这个 skill：https://github.com/scoff426-alt/clear-skill
 ```
+
+## 使用方式
+
+安装后，在 Agent 对话中使用这个 skill。最常用的清理触发词是：
+
+```text
+clear
+```
+
+Codex 会在工作过程中把生成的临时产物记录到 `.codex-session-generated-files.json`，当用户要求清理时，再通过内置 Python 辅助脚本删除这些已记录的产物。
 
 `clearing-generated-files` 是一个用于清理“当前对话中生成文件”的 Codex skill。它适合这类场景：用户让 Codex 临时生成 PPT、Word、Excel、PDF、图片、HTML 预览、JSON/Markdown 辅助文件、脚本或其他临时产物，用户复制或下载完结果后，只需要发送 `clear`，Codex 就会删除本次对话产生的临时文件。
 

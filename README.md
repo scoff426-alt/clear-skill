@@ -4,6 +4,12 @@ English | [简体中文](README.zh-CN.md)
 
 ## Installation
 
+Requirements:
+
+- Git
+- Python 3.9+ for the bundled cleanup helper
+- Codex or another agent runtime that supports Skills
+
 PowerShell:
 
 ```powershell
@@ -21,6 +27,16 @@ Or, in Codex or another agent that supports Skills, say:
 ```text
 Please install this skill: https://github.com/scoff426-alt/clear-skill
 ```
+
+## Usage
+
+After installation, use the skill through your agent conversation. The normal cleanup trigger is:
+
+```text
+clear
+```
+
+Codex records generated artifacts in `.codex-session-generated-files.json` while it works, then uses the bundled Python helper to remove those recorded artifacts when cleanup is requested.
 
 `clearing-generated-files` is a Codex skill for cleaning up files created during short artifact-oriented conversations. It is intended for cases where the user asks Codex to generate a PPT, Word document, Excel workbook, PDF, image, HTML preview, JSON/Markdown helper file, script, or other temporary output, copies the result, and then says `clear` to remove everything generated in that conversation.
 
