@@ -2,6 +2,20 @@
 
 [English](README.md) | 简体中文
 
+## 安装
+
+PowerShell:
+
+```powershell
+git clone https://github.com/scoff426-alt/clear-skill.git "$env:USERPROFILE\.codex\skills\clearing-generated-files"
+```
+
+Bash:
+
+```bash
+git clone https://github.com/scoff426-alt/clear-skill.git ~/.codex/skills/clearing-generated-files
+```
+
 `clearing-generated-files` 是一个用于清理“当前对话中生成文件”的 Codex skill。它适合这类场景：用户让 Codex 临时生成 PPT、Word、Excel、PDF、图片、HTML 预览、JSON/Markdown 辅助文件、脚本或其他临时产物，用户复制或下载完结果后，只需要发送 `clear`，Codex 就会删除本次对话产生的临时文件。
 
 ## 这个 skill 会做什么
@@ -88,20 +102,6 @@
 ## 关于 Markdown 文件的重要说明
 
 这个 skill 可以删除生成的 `.md` 和 `.markdown` 文件，例如临时笔记、构建日志、文本提取结果或生成的会议草稿。它不会自动删除受保护的 Markdown 文件，例如 `README.md`、`AGENTS.md`、`CLAUDE.md` 或 `GEMINI.md`。
-
-## 推荐清理命令
-
-不确定时，先执行 dry run：
-
-```powershell
-powershell -ExecutionPolicy Bypass -File C:\Users\30316\.codex\skills\clearing-generated-files\scripts\clear-generated-files.ps1 -Workspace <active-workspace> -DryRun
-```
-
-确认无误后正式删除：
-
-```powershell
-powershell -ExecutionPolicy Bypass -File C:\Users\30316\.codex\skills\clearing-generated-files\scripts\clear-generated-files.ps1 -Workspace <active-workspace>
-```
 
 ## 预期用户指令
 

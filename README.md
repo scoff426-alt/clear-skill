@@ -2,6 +2,20 @@
 
 English | [简体中文](README.zh-CN.md)
 
+## Installation
+
+PowerShell:
+
+```powershell
+git clone https://github.com/scoff426-alt/clear-skill.git "$env:USERPROFILE\.codex\skills\clearing-generated-files"
+```
+
+Bash:
+
+```bash
+git clone https://github.com/scoff426-alt/clear-skill.git ~/.codex/skills/clearing-generated-files
+```
+
 `clearing-generated-files` is a Codex skill for cleaning up files created during short artifact-oriented conversations. It is intended for cases where the user asks Codex to generate a PPT, Word document, Excel workbook, PDF, image, HTML preview, JSON/Markdown helper file, script, or other temporary output, copies the result, and then says `clear` to remove everything generated in that conversation.
 
 ## What the skill does
@@ -88,20 +102,6 @@ These are blocked or protected even if they appear in the manifest, unless the u
 ## Important Markdown note
 
 The skill can delete generated `.md` and `.markdown` files such as temporary notes, build logs, extracted text, or generated meeting drafts. It does not automatically delete protected Markdown files such as `README.md`, `AGENTS.md`, `CLAUDE.md`, or `GEMINI.md`.
-
-## Recommended cleanup command
-
-Dry run first when unsure:
-
-```powershell
-powershell -ExecutionPolicy Bypass -File C:\Users\30316\.codex\skills\clearing-generated-files\scripts\clear-generated-files.ps1 -Workspace <active-workspace> -DryRun
-```
-
-Delete for real:
-
-```powershell
-powershell -ExecutionPolicy Bypass -File C:\Users\30316\.codex\skills\clearing-generated-files\scripts\clear-generated-files.ps1 -Workspace <active-workspace>
-```
 
 ## Expected user command
 
