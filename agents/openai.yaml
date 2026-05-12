@@ -1,0 +1,7 @@
+﻿interface:
+  display_name: "Clear Generated Files"
+  short_description: "Clean up temporary files generated in the current conversation."
+  default_prompt: "Use $clearing-generated-files to remove the temporary files generated in this conversation."
+  brand_color: "#2563EB"
+policy:
+  allow_implicit_invocation: true
