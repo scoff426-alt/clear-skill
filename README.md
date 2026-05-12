@@ -16,6 +16,12 @@ Bash:
 git clone https://github.com/scoff426-alt/clear-skill.git ~/.codex/skills/clearing-generated-files
 ```
 
+Or, in Codex or another agent that supports Skills, say:
+
+```text
+Please install this skill: https://github.com/scoff426-alt/clear-skill
+```
+
 `clearing-generated-files` is a Codex skill for cleaning up files created during short artifact-oriented conversations. It is intended for cases where the user asks Codex to generate a PPT, Word document, Excel workbook, PDF, image, HTML preview, JSON/Markdown helper file, script, or other temporary output, copies the result, and then says `clear` to remove everything generated in that conversation.
 
 ## What the skill does

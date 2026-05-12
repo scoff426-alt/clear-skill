@@ -16,6 +16,12 @@ Bash:
 git clone https://github.com/scoff426-alt/clear-skill.git ~/.codex/skills/clearing-generated-files
 ```
 
+或在 Codex 等支持 Skill 的 Agent 里，直接说：
+
+```text
+请帮我安装这个 skill：https://github.com/scoff426-alt/clear-skill
+```
+
 `clearing-generated-files` 是一个用于清理“当前对话中生成文件”的 Codex skill。它适合这类场景：用户让 Codex 临时生成 PPT、Word、Excel、PDF、图片、HTML 预览、JSON/Markdown 辅助文件、脚本或其他临时产物，用户复制或下载完结果后，只需要发送 `clear`，Codex 就会删除本次对话产生的临时文件。
 
 ## 这个 skill 会做什么
