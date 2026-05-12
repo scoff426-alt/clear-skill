@@ -38,7 +38,7 @@ The skill is designed for temporary outputs, not project maintenance or source-c
 ## Files in this skill
 
 - `SKILL.md`: trigger rules and operational instructions for Codex.
-- `scripts/clear-generated-files.ps1`: Windows cleanup helper with workspace, protected-file, and dry-run checks.
+- `scripts/clear_generated_files.py`: Python cleanup helper with workspace, protected-file, and dry-run checks.
 - `agents/openai.yaml`: UI metadata for the skill.
 - `README.md`: English reference.
 - `README.zh-CN.md`: Simplified Chinese reference.

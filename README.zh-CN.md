@@ -38,7 +38,7 @@ git clone https://github.com/scoff426-alt/clear-skill.git ~/.codex/skills/cleari
 ## skill 文件结构
 
 - `SKILL.md`：Codex 使用的触发规则和操作流程。
-- `scripts/clear-generated-files.ps1`：Windows 清理脚本，包含工作区校验、受保护文件检查和 dry-run 支持。
+- `scripts/clear_generated_files.py`：Python 清理脚本，包含工作区校验、受保护文件检查和 dry-run 支持。
 - `agents/openai.yaml`：skill 的 UI 元数据。
 - `README.md`：英文说明文档。
 - `README.zh-CN.md`：简体中文说明文档。

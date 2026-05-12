@@ -39,13 +39,13 @@ Do not record user-provided sources, files that existed before the task, reposit
 5. Delete deepest paths first, then delete the manifest last.
 6. Report deleted, skipped, missing, and protected items.
 
-Prefer the bundled script on Windows:
+Prefer the bundled Python script:
 
-```powershell
-powershell -ExecutionPolicy Bypass -File <skill-dir>\scripts\clear-generated-files.ps1 -Workspace <active-workspace>
+```bash
+python <skill-dir>/scripts/clear_generated_files.py --workspace <active-workspace>
 ```
 
-Use `-DryRun` when the target set is uncertain.
+Use `--dry-run` when the target set is uncertain.
 
 ## Safety Boundary
 
